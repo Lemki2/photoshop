@@ -1,0 +1,25 @@
+.svg {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    animation: move 4s linear infinite alternate;
+}
+
+svg {
+    transition: transform 0.7s;
+}
+
+svg:hover {
+    transform: scale(1.2);
+}
+
+h1 { color: rgb(30, 0, 255); font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+
+@keyframes move {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 200px; /* Adjust the distance you want the element to move */
+    }
+}
